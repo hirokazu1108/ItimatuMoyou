@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02a5f0e30a4f5d48bfb2bcbda9cc478, type: 3}
+  m_Name: tops_santa
+  m_EditorClassIdentifier: 
+  itemName: tops_santa
+  hasItem: 0
+  isRegister: 1
+  category: 3
+  gameObject: {fileID: 5924711452071323253, guid: f5a257ade557aa94cb0264cdaf3dac95, type: 3}
+  sprite: {fileID: 21300000, guid: 4803d28950d7d7c43a4202c848bc681f, type: 3}
+  weight: 0.25
+  score: 5000

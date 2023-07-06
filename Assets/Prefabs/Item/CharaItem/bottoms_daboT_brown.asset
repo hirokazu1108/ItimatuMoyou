@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02a5f0e30a4f5d48bfb2bcbda9cc478, type: 3}
+  m_Name: bottoms_daboT_brown
+  m_EditorClassIdentifier: 
+  itemName: bottoms_daboT_brown
+  hasItem: 0
+  isRegister: 1
+  category: 2
+  gameObject: {fileID: 3185199438476587613, guid: 7e0ddaa8971113649aeed8305fafc484, type: 3}
+  sprite: {fileID: 21300000, guid: 9a27209cfc4e6f346823fc0c262a9629, type: 3}
+  weight: 2.857
+  score: 500

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02a5f0e30a4f5d48bfb2bcbda9cc478, type: 3}
+  m_Name: hat_sister
+  m_EditorClassIdentifier: 
+  itemName: hat_sister
+  hasItem: 0
+  isRegister: 1
+  category: 0
+  gameObject: {fileID: 6471735058478065504, guid: 6138d897632fe9b41ac89d116cbb4827, type: 3}
+  sprite: {fileID: 21300000, guid: 51bbcf3e816acfb418b71bd687b31eaf, type: 3}
+  weight: 1.5
+  score: 1000

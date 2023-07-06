@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02a5f0e30a4f5d48bfb2bcbda9cc478, type: 3}
+  m_Name: tops_dress
+  m_EditorClassIdentifier: 
+  itemName: tops_dress
+  hasItem: 0
+  isRegister: 1
+  category: 3
+  gameObject: {fileID: 5138505646775084701, guid: 3dc7c2775d500dd49b1c1b1d1b7baeff, type: 3}
+  sprite: {fileID: 21300000, guid: 2de4d07ca5f8ece41a4aeb57adbf77b7, type: 3}
+  weight: 0.25
+  score: 5000

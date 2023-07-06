@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02a5f0e30a4f5d48bfb2bcbda9cc478, type: 3}
+  m_Name: body_daboT_brown
+  m_EditorClassIdentifier: 
+  itemName: body_daboT_brown
+  hasItem: 0
+  isRegister: 1
+  category: 1
+  gameObject: {fileID: 2614976676683493735, guid: fd554ecefb11b7e42bfdc94cfd5425d0, type: 3}
+  sprite: {fileID: 21300000, guid: 667cf29eaf500d84abd8ced320b6adf7, type: 3}
+  weight: 0.88235
+  score: 500

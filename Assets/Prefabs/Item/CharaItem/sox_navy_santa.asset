@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02a5f0e30a4f5d48bfb2bcbda9cc478, type: 3}
+  m_Name: sox_navy_santa
+  m_EditorClassIdentifier: 
+  itemName: sox_navy_santa
+  hasItem: 0
+  isRegister: 1
+  category: 4
+  gameObject: {fileID: 5853447266817945980, guid: b41d01c6ce47fe44db26bf502e754dad, type: 3}
+  sprite: {fileID: 21300000, guid: ef50806600e12b1409ef258536a4649b, type: 3}
+  weight: 2.727
+  score: 100
