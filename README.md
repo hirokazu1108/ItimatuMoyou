@@ -1,7 +1,6 @@
 # ItimatuMoyou（市松模様）
 
-<p  align="center"><img width="521" alt="image" src="https://github.com/hirokazu1108/SoftwareExperiment2022/assets/87222170/c3594f67-b97a-4885-b755-6ff7fe8b13ec"></p>
-![icon_20230226_234639](https://github.com/hirokazu1108/ItimatuMoyou/assets/87222170/03486443-112c-4062-b214-f6ab6dd52537)
+<p  align="center"><img width="521" alt="image" src="https://github.com/hirokazu1108/ItimatuMoyou/assets/87222170/03486443-112c-4062-b214-f6ab6dd52537"></p>
 
 
 - ### 概要
