@@ -8,7 +8,7 @@
 
    この制作では以下を使用しています.
    - C#
-   - [Unity](https://unity.com/ja)
+   - [Unity(https://unity.com/ja)](https://unity.com/ja)
    - [Blender(https://www.blender.org/)](https://www.blender.org/)
   
 - ### プレイ動画・掲載ページ
