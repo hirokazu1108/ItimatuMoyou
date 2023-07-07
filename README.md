@@ -45,6 +45,8 @@
        - これまでに集めた衣装を図鑑で確認できる
 
 - ### 共同制作者
-   - []()
+   - [Kususe-Kohei -GitHub](https://github.com/Kususe-Kohei)
+   - [yukiudagawa -GitHub](https://github.com/yukiudagawa) 
+   - [hosoe -GitHub](https://github.com/t-hosoe)
    
 
