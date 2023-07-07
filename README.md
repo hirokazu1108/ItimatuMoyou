@@ -6,6 +6,11 @@
 - ### 概要
   2022年12月中旬から2023年1月末にかけてゲームエンジンUnityを用いて,徳島大学ゲームクリエイトプロジェクトのメンバ数名で共同制作した「市松模様」というゲーム作品です.
 
+   この制作では以下を使用しています.
+   - C#
+   - [Unity](https://unity.com/ja)
+   - [Blender(https://www.blender.org/)](https://www.blender.org/)
+  
 - ### プレイ動画・掲載ページ
    [プレイ動画（Google Driveに移動）](https://drive.google.com/drive/u/1/folders/1QlGOesiHKCc60sRfaEiHR3TlQCjtcapf)
    
