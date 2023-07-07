@@ -48,5 +48,6 @@
    - [Kususe-Kohei -GitHub](https://github.com/Kususe-Kohei)
    - [yukiudagawa -GitHub](https://github.com/yukiudagawa) 
    - [hosoe -GitHub](https://github.com/t-hosoe)
+   - 他2名
    
 
