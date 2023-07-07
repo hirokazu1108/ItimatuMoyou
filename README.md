@@ -62,6 +62,10 @@
   
    スペースキー：髪の毛を伸ばす
 
+- ### 使用アセット
+   - [Apartment Kit -UnityAssetStore](https://assetstore.unity.com/packages/3d/environments/apartment-kit-124055)
+   - [Furnished Cabin -UnityAssetStore](https://assetstore.unity.com/packages/3d/environments/urban/furnished-cabin-71426)
+
 - ### 共同制作者
    - [Kususe-Kohei -GitHub](https://github.com/Kususe-Kohei)
    - [yukiudagawa -GitHub](https://github.com/yukiudagawa) 
