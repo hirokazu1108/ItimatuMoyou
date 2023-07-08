@@ -13,7 +13,7 @@
 - ### プレイ動画・掲載ページ
    [プレイ動画（Google Driveに移動）](https://drive.google.com/drive/u/1/folders/1QlGOesiHKCc60sRfaEiHR3TlQCjtcapf)
    
-   [徳島大学ゲームクリエイトプロジェクト UnityRoom](https://unityroom.com/users/s51bljtz6nox4i0vrd8a)　 <--こちらからお遊びいただけます
+   [徳島大学ゲームクリエイトプロジェクト UnityRoom](https://unityroom.com/games/ichimatsu)　 <--こちらからお遊びいただけます
 
 - ### 担当箇所
    - タイトル,リザルト画面
