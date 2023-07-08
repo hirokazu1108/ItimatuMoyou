@@ -1,7 +1,6 @@
 # ItimatuMoyou（市松模様）
 
-<p  align="center"><img width="521" alt="image" src="https://github.com/hirokazu1108/ItimatuMoyou/assets/87222170/03486443-112c-4062-b214-f6ab6dd52537"></p>
-
+<p  align="center"><img width="521" alt="image" src="https://github.com/hirokazu1108/ItimatuMoyou/assets/87222170/6d28aba8-0d51-4028-a19d-06e241844d5a"></p>
 
 - ### 概要
   2022年12月中旬から2023年1月末にかけてゲームエンジンUnityを用いて,徳島大学ゲームクリエイトプロジェクトのメンバ数名で共同制作した「市松模様」というゲーム作品です.
