@@ -1,8 +1,6 @@
 using UnityEngine;
-using UnityEngine.UI;
 using System;
 using System.IO;
-using System.Collections;
 using System.Collections.Generic;
 
 // ref
@@ -10,10 +8,11 @@ using System.Collections.Generic;
 
 public class SaveManager : MonoBehaviour
 {
-    private string dataPath; // ファイルパス
+    private string _dataPath; // ファイルパス
 
-    [SerializeField] private ItemDataBase itemDataBase; // アイテムデータベース
-    List<CharaItem> charaItems;
+    private List<CharaItem> _charaItems;
+    [SerializeField] ItemDataBase itemDataBase; // アイテムデータベース
+    
 
     [Serializable] private class SaveDataContainer
     {
@@ -22,7 +21,7 @@ public class SaveManager : MonoBehaviour
     }
     [Serializable] private struct SaveData
     {
-        public string itemName;
+        public string itemName; 
         public bool isRegister;
     }
 
@@ -30,7 +29,7 @@ public class SaveManager : MonoBehaviour
     {
         // ファイルのパスを計算
         //dataPath = Path.Combine(Application.dataPath,"StreamingAssets/ItemData/" ,"savedata.json");
-        charaItems = itemDataBase.GetCharaItemList();
+        _charaItems = itemDataBase.GetCharaItemList();
 
 
         if (PlayerPrefs.GetInt("isSave",0) == 1)
@@ -45,20 +44,16 @@ public class SaveManager : MonoBehaviour
         }
 
     }
-    private void Start()
-    {
-        
-    }
 
     // PlayerPrefsでセーブ
     public void OnSave()
     {
         PlayerPrefs.SetInt("isSave", 1);    //1度でもセーブしたことを示す
 
-        for(int i=0; i<charaItems.Count; i++)
+        for(int i=0; i<_charaItems.Count; i++)
         {
-            int flg = charaItems[i].GetIsRegister() ? 1 : 0;
-            PlayerPrefs.SetInt(charaItems[i].GetItemName(), flg);   // アイテムの入手状態の保存
+            int flg = _charaItems[i].GetIsRegister() ? 1 : 0;
+            PlayerPrefs.SetInt(_charaItems[i].GetItemName(), flg);   // アイテムの入手状態の保存
         }
         
         // 選択しているアイテムの保存
@@ -75,9 +70,9 @@ public class SaveManager : MonoBehaviour
     // PlayerPrefsでロード
     public void OnLoad()
     {
-        for (int i = 0; i < charaItems.Count; i++)
+        for (int i = 0; i < _charaItems.Count; i++)
         {
-            charaItems[i].SetIsRegister(PlayerPrefs.GetInt(charaItems[i].GetItemName(), 0) == 1 ? true : false);// アイテムの入手状態の読み込み
+            _charaItems[i].SetIsRegister(PlayerPrefs.GetInt(_charaItems[i].GetItemName(), 0) == 1 ? true : false);// アイテムの入手状態の読み込み
         }
 
         // 選択しているアイテムの読み込み
@@ -103,13 +98,13 @@ public class SaveManager : MonoBehaviour
         // シリアライズするオブジェクトを作成
         // 第2引数trueでJSONを見やすく整形する 
         SaveDataContainer saveData = new SaveDataContainer();
-        saveData.charaItemData = new SaveData[charaItems.Count];
+        saveData.charaItemData = new SaveData[_charaItems.Count];
 
         // ゲームデータをセーブするデータに格納
-        for (int i=0; i < charaItems.Count; i++)
+        for (int i=0; i < _charaItems.Count; i++)
         {
-            saveData.charaItemData[i].itemName = charaItems[i].GetItemName();
-            saveData.charaItemData[i].isRegister = charaItems[i].GetIsRegister();
+            saveData.charaItemData[i].itemName = _charaItems[i].GetItemName();
+            saveData.charaItemData[i].isRegister = _charaItems[i].GetIsRegister();
         }
         saveData.selectedItem = CharaItem.selectedName;    //選択している衣装の格納
 
@@ -117,7 +112,7 @@ public class SaveManager : MonoBehaviour
         // JSON形式にシリアライズ
         var json =JsonUtility.ToJson(saveData, true);
         // JSONデータをファイルに保存
-        File.WriteAllText(dataPath, json);
+        File.WriteAllText(_dataPath, json);
     }
         
     
@@ -126,23 +121,23 @@ public class SaveManager : MonoBehaviour
     public void OnJsonLoad()
     {
         // 念のためファイルの存在チェック
-        if (!File.Exists(dataPath)) return;
+        if (!File.Exists(_dataPath)) return;
  
         // JSONデータとしてデータを読み込む
-        var json = File.ReadAllText(dataPath);
+        var json = File.ReadAllText(_dataPath);
 
         // 読み込んだオブジェクトを格納する箱
         SaveDataContainer loadData = new SaveDataContainer();
-        loadData.charaItemData = new SaveData[charaItems.Count];
+        loadData.charaItemData = new SaveData[_charaItems.Count];
 
         // JSON形式からオブジェクトにデシリアライズ
         loadData = JsonUtility.FromJson<SaveDataContainer>(json);
 
         // 読み込んだデータを使用するゲームデータに代入
-        for (int i = 0; i < charaItems.Count; i++)
+        for (int i = 0; i < _charaItems.Count; i++)
         {
-            charaItems[i].SetItemName(loadData.charaItemData[i].itemName);
-            charaItems[i].SetIsRegister(loadData.charaItemData[i].isRegister);
+            _charaItems[i].SetItemName(loadData.charaItemData[i].itemName);
+            _charaItems[i].SetIsRegister(loadData.charaItemData[i].isRegister);
         }
         CharaItem.selectedName = loadData.selectedItem;    //選択している衣装の格納
     }

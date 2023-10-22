@@ -1,38 +1,37 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "ItemDataBase", menuName = "CreateItemDataBase")]
 public class ItemDataBase : ScriptableObject
 {
-	[SerializeField] private List<CharaItem> charaItemList = new List<CharaItem>();
+	[SerializeField] List<CharaItem> _charaItemList = new List<CharaItem>();
 
 	public List<CharaItem> GetCharaItemList()
 	{
-		return charaItemList;
+		return _charaItemList;
 	}
 	public CharaItem GetCharaItemFromName(string str)
 	{
-		return charaItemList.Find(x => x.GetItemName() == str);
+		return _charaItemList.Find(x => x.GetItemName() == str);
 	}
 
 	public List<CharaItem> GetHasCharaItemList()
 	{
-		return charaItemList.FindAll(x => x.GetHasItem() == true);
+		return _charaItemList.FindAll(x => x.GetHasItem() == true);
 	}
 	public List<CharaItem> GetRegisterCharaItemList()
 	{
-		return charaItemList.FindAll(x => x.GetIsRegister() == true);
+		return _charaItemList.FindAll(x => x.GetIsRegister() == true);
 	}
 	public List<CharaItem> GetItemListFromCategory(Category cat)
 	{
-		return charaItemList.FindAll(x => x.GetCategory() == cat);
+		return _charaItemList.FindAll(x => x.GetCategory() == cat);
 	}
 	// アイテムの入手した種類数を返す
 	public int GetHasItemNum()
 	{
 		int sum = 0;
-		foreach (var ch in charaItemList)
+		foreach (var ch in _charaItemList)
 		{
 			if (ch.GetHasItem() == true)
 			{
@@ -46,7 +45,7 @@ public class ItemDataBase : ScriptableObject
 	public int GetRegisterItemNum()
 	{
 		int sum = 0;
-		foreach (var ch in charaItemList)
+		foreach (var ch in _charaItemList)
 		{
 			if (ch.GetIsRegister() == true)
 			{
@@ -59,7 +58,7 @@ public class ItemDataBase : ScriptableObject
 	// データを削除する
 	public void ResetData()
 	{
-		foreach (CharaItem item in charaItemList)
+		foreach (CharaItem item in _charaItemList)
 		{
 				item.SetHasItem(false);
 				item.SetIsRegister(false);
@@ -82,7 +81,7 @@ public class ItemDataBase : ScriptableObject
 	public int GetCategoryItemNum(Category cat)
     {
 		int sum = 0;
-		foreach (var ch in charaItemList)
+		foreach (var ch in _charaItemList)
 		{
 			if (ch.GetCategory() == cat)
 			{

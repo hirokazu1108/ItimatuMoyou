@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//アイテムカテゴリの列挙型
 public enum Category
 {
 	Hat,
@@ -13,6 +14,7 @@ public enum Category
 	Shoes,
 }
 
+//選択中のアイテム名
 [Serializable]
 public struct SelectedItem
 {

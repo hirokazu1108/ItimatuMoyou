@@ -10,10 +10,6 @@ public class TextManager : MonoBehaviour
     [SerializeField] Text itemText;     //�W�߂��A�C�e���̎�ސ��̃e�L�X�g
     [SerializeField] Text scoreText;    //�X�R�A�̃e�L�X�g
     private float scoreAll;
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
